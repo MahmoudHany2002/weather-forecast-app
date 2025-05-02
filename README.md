@@ -1,96 +1,149 @@
-# Weather Forecast App
+<div align="center">
+  <img src="assets/clear.png" alt="Weather App Logo" width="200"/>
 
-![Weather App Banner](assets/clear.png)
+  # ☀️ تطبيق توقعات الطقس
 
-## Overview
+  <p>
+    تطبيق جميل وعصري يوفر معلومات الطقس في الوقت الحقيقي لمدن حول العالم
+    <br />
+    <a href="docs/README.md"><strong>استكشف التوثيق »</strong></a>
+    <br />
+    <br />
+    <a href="#العرض-التوضيحي">العرض التوضيحي</a>
+    ·
+    <a href="https://github.com/MahmoudHany2002/weather-forecast-app/issues">الإبلاغ عن خطأ</a>
+    ·
+    <a href="https://github.com/MahmoudHany2002/weather-forecast-app/issues">طلب ميزة</a>
+  </p>
 
-Weather Forecast is a beautiful, modern Flutter application that provides real-time weather information for cities around the world. With an elegant UI and smooth animations, this app delivers a premium user experience while providing accurate weather data.
+  [![Flutter CI](https://github.com/MahmoudHany2002/weather-forecast-app/workflows/Flutter%20CI/badge.svg)](https://github.com/MahmoudHany2002/weather-forecast-app/actions)
+  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+  [![Flutter](https://img.shields.io/badge/Flutter-3.10.0-blue)](https://flutter.dev)
+  [![Dart](https://img.shields.io/badge/Dart-3.0.0-blue)](https://dart.dev)
+</div>
 
-## Features
+## 📋 جدول المحتويات
 
-- **Real-time Weather Data**: Get current weather conditions for any city worldwide
-- **2-Day Forecast**: View weather predictions for the upcoming days
-- **Beautiful UI**: Enjoy a professional, visually appealing interface with animations
-- **Search Functionality**: Easily search for any city or select from popular options
-- **Detailed Weather Information**: Access comprehensive weather details including temperature, conditions, and more
+- [نظرة عامة](#نظرة-عامة)
+- [الميزات الرئيسية](#الميزات-الرئيسية)
+- [العرض التوضيحي](#العرض-التوضيحي)
+- [التفاصيل التقنية](#التفاصيل-التقنية)
+- [البدء](#البدء)
+- [خريطة الطريق](#خريطة-الطريق)
+- [المساهمة](#المساهمة)
+- [الترخيص](#الترخيص)
+- [الاعتمادات](#الاعتمادات)
+- [التواصل](#التواصل)
 
-## Screenshots
+## 🌟 نظرة عامة
 
-The app features a modern, gradient-based UI with smooth animations and transitions:
+تطبيق توقعات الطقس هو تطبيق Flutter جميل وحديث يوفر معلومات الطقس في الوقت الحقيقي للمدن حول العالم. مع واجهة مستخدم أنيقة ورسوم متحركة سلسة، يقدم هذا التطبيق تجربة مستخدم متميزة مع توفير بيانات طقس دقيقة.
 
-- Welcome Screen with animated sun and clouds
-- Search screen with popular city suggestions
-- Detailed weather view with current conditions and forecast
-- Loading and error states with beautiful visual feedback
+## ✨ الميزات الرئيسية
 
-## Technical Details
+- **🌦️ بيانات الطقس في الوقت الحقيقي**: احصل على ظروف الطقس الحالية لأي مدينة حول العالم
+- **📅 توقعات لمدة يومين**: عرض توقعات الطقس للأيام القادمة
+- **🎨 واجهة مستخدم جميلة**: استمتع بواجهة احترافية وجذابة بصريًا مع رسوم متحركة
+- **🔍 وظيفة البحث**: ابحث بسهولة عن أي مدينة أو اختر من الخيارات الشائعة
+- **📊 معلومات طقس مفصلة**: الوصول إلى تفاصيل شاملة عن الطقس بما في ذلك درجة الحرارة والظروف الجوية والمزيد
 
-### Architecture
+## 📱 العرض التوضيحي
 
-This app is built using:
+يتميز التطبيق بواجهة مستخدم عصرية قائمة على التدرج مع رسوم متحركة وانتقالات سلسة:
 
-- **Flutter**: For cross-platform mobile development
-- **Dart**: As the programming language
-- **BLoC Pattern**: For state management using flutter_bloc
-- **API Integration**: Weather data from weatherapi.com
-- **Custom Animations**: For enhanced user experience
+- شاشة الترحيب مع رسوم متحركة للشمس والسحب
+- شاشة البحث مع اقتراحات المدن الشائعة
+- عرض تفصيلي للطقس مع الظروف الحالية والتوقعات
+- حالات التحميل والخطأ مع تغذية مرئية جميلة
 
-### Key Components
+## 🔧 التفاصيل التقنية
 
-- **Cubit State Management**: Handles app state and data flow
-- **Model-View Architecture**: Clean separation of data and UI
-- **Custom Widgets**: Reusable components for consistent design
-- **Responsive Design**: Adapts to different screen sizes
+### الهيكل
 
-## Getting Started
+تم بناء هذا التطبيق باستخدام:
 
-### Prerequisites
+- **Flutter**: لتطوير تطبيقات متعددة المنصات
+- **Dart**: كلغة البرمجة
+- **نمط BLoC**: لإدارة الحالة باستخدام flutter_bloc
+- **تكامل API**: بيانات الطقس من weatherapi.com
+- **رسوم متحركة مخصصة**: لتحسين تجربة المستخدم
 
-- Flutter SDK (2.0 or higher)
+### المكونات الرئيسية
+
+- **إدارة حالة Cubit**: تتعامل مع حالة التطبيق وتدفق البيانات
+- **هيكل Model-View**: فصل نظيف للبيانات وواجهة المستخدم
+- **ويدجت مخصصة**: مكونات قابلة لإعادة الاستخدام لتصميم متسق
+- **تصميم متجاوب**: يتكيف مع أحجام الشاشات المختلفة
+
+## 🚀 البدء
+
+### المتطلبات الأساسية
+
+- Flutter SDK (2.0 أو أعلى)
 - Dart SDK
 - Android Studio / VS Code
-- Android / iOS emulator or physical device
+- محاكي Android / iOS أو جهاز فعلي
 
-### Installation
+### التثبيت
 
-1. Clone this repository:
+1. استنساخ هذا المستودع:
 ```
-git clone https://github.com/yourusername/weather-forecast-app.git
+git clone https://github.com/MahmoudHany2002/weather-forecast-app.git
 ```
 
-2. Navigate to the project directory:
+2. الانتقال إلى دليل المشروع:
 ```
 cd weather-forecast-app
 ```
 
-3. Install dependencies:
+3. تثبيت التبعيات:
 ```
 flutter pub get
 ```
 
-4. Run the app:
+4. تشغيل التطبيق:
 ```
 flutter run
 ```
 
-## Future Enhancements
+## 🗺️ خريطة الطريق
 
-- Dark mode support
-- Location-based weather detection
-- More detailed forecast (hourly, weekly)
-- Weather maps and radar
-- Weather notifications and alerts
-- Settings for temperature units (Celsius/Fahrenheit)
+- دعم الوضع المظلم
+- اكتشاف الطقس بناءً على الموقع
+- توقعات أكثر تفصيلاً (بالساعة، أسبوعية)
+- خرائط وردار الطقس
+- إشعارات وتنبيهات الطقس
+- إعدادات لوحدات درجة الحرارة (سيلسيوس/فهرنهايت)
 
-## Credits
+## 👥 المساهمة
 
-- Weather data provided by [WeatherAPI.com](https://www.weatherapi.com/)
-- Icons and design inspiration from various sources
+المساهمات هي ما يجعل مجتمع المصادر المفتوحة مكانًا رائعًا للتعلم والإلهام والإبداع. أي مساهمات تقدمها هي **موضع تقدير كبير**.
 
-## License
+1. افتح المشروع
+2. أنشئ فرعًا للميزة (`git checkout -b feature/amazing-feature`)
+3. قم بعمل Commit للتغييرات (`git commit -m 'إضافة ميزة رائعة'`)
+4. ادفع إلى الفرع (`git push origin feature/amazing-feature`)
+5. افتح طلب سحب
 
-This project is licensed under the MIT License - see the LICENSE file for details.
+لمزيد من التفاصيل، يرجى الرجوع إلى [دليل المساهمة](CONTRIBUTING.md).
+
+## 📄 الترخيص
+
+تم ترخيص هذا المشروع بموجب ترخيص MIT - راجع ملف [LICENSE](LICENSE) للحصول على التفاصيل.
+
+## 🙏 الاعتمادات
+
+- بيانات الطقس مقدمة من [WeatherAPI.com](https://www.weatherapi.com/)
+- الأيقونات وإلهام التصميم من مصادر مختلفة
+
+## 📬 التواصل
+
+محمود هاني - [@MahmoudHany](https://twitter.com/MahmoudHany)
+
+رابط المشروع: [https://github.com/MahmoudHany2002/weather-forecast-app](https://github.com/MahmoudHany2002/weather-forecast-app)
 
 ---
 
-Developed with ❤️ using Flutter
+<div align="center">
+  تم التطوير بـ ❤️ باستخدام Flutter
+</div>
